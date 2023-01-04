@@ -12,6 +12,11 @@ jobs:
       - name: Sphinx build
         run: |
           cd docs && make html
+      - name: Upload docs build
+        uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: docs/build
       - name: Encrypt files
         shell: bash
         run: |
