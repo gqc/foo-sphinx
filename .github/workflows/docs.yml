@@ -11,7 +11,7 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst-parser
       - name: Sphinx build
         run: |
-          sphinx-build doc _build
+          sphinx-build docs/source docs/build
       - name: Encrypt files
         shell: bash
         run: |
