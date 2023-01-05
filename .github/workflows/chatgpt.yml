@@ -15,9 +15,9 @@ jobs:
           pip install -U sphinx sphinx_rtd_theme myst-parser recommonmark
       - name: Build Documentation
         run: |
-          make html
+          cd docs/source && make html
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_build/html
+          publish_dir: ./docs/_build/
