@@ -16,6 +16,11 @@ jobs:
       - name: Build Documentation
         run: |
           sphinx-build docs/source/ docs/build/
+      - name: Encrypt files
+        shell: bash
+        run: |
+          npm install -g staticrypt
+          find . -type f -name "*.html" -exec staticrypt {} MYPASSWORD --output {} \;
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
