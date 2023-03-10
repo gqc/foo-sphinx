@@ -10,7 +10,7 @@ Welcome to foo's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   foo
+   modules
 
 
 
