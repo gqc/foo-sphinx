@@ -11,6 +11,7 @@ Welcome to foo's documentation!
    :caption: Contents:
 
    modules
+   example
 
 
 
