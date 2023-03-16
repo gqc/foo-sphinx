@@ -1,6 +1,6 @@
 from enum import Enum
 
-class Constant(Enum):
+class Constant():
   "This is the enums module which documents constants"
   CONSTANT_1 = 1
   CONSTANT_2 = 2
