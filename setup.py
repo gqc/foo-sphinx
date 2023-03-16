@@ -14,9 +14,9 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     keywords="",
-    url="https://github.com/deven367/test",
-    author="Allen Institute for Artificial Intelligence",
-    author_email="contact@allenai.org",
+    url="https://gqc.github.io/foo-sphinx/",
+    author="GQC",
+    author_email="deven@gqc.com",
     license="Apache",
     packages=find_packages(
         exclude=["*.tests", "*.tests.*", "tests.*", "tests"],
